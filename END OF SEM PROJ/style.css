@@ -1,0 +1,768 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+  
+:root {
+    --main-bg-color: #009d63;
+    --main-text-color: #009d63;
+    --second-text-color: #bbbec5;
+    --second-bg-color: #c1efde;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins', sans-serif;
+}
+
+
+/*css for (index.html)*/
+.heads{
+    font-size: 15px;
+    color: white;
+    position: absolute;
+    top: 1%;
+    left: 2%;
+}
+.heads h1{
+    font-size: 15px;
+    position: absolute;
+    top: 90%;
+    left: 15%;
+}
+  .welcome{
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+} 
+.logins p{
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 1em;
+    font-weight: lighter;
+}
+.welcome h1{
+    line-height: 1em;
+}
+.overlay{
+    background-color: #000;
+    height: 100vh;
+    opacity: 0.5;
+}
+
+/*css for the admin and the user login page  */
+#body2{
+    background-image: url(img/photo_2_2024-01-04_08-48-10.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    height: 100vh; 
+}
+.admin p{
+    text-align: center;
+}
+.admin-page{
+    width: 60%;
+    max-width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 2em;
+    box-shadow: 0px 0px 6px var(--main-text-color);
+    border: none;
+    gap: 5em;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.admin-page h1{
+    text-align: center;
+}
+.img-login {
+    text-align: center;
+
+}
+.img-login img{
+    width: 100px; 
+}
+.admin p{
+    font-style: italic;
+}
+.admin #p2{
+    font-size: 15px;
+}
+.btn-login{
+    padding: 10px;
+    border: none;
+    transition: 0.5s all ease-out;
+    border-radius: 5px;
+    background-color: #0bb457;
+    color: white;
+    width: 100%;
+    font-weight: bolder;
+    cursor: pointer;
+    margin: 10px;
+}
+.btn-login:hover{
+    transition: 0.5s all ease-in-out;
+
+}
+.logins{
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+.logins input{
+    font-size: 15px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #001b48;
+    overflow: hidden;
+    font-family:'Poppins', sans-serif;
+    background-color: transparent;
+}
+
+
+/*css for the dashboard,vehicle,userdash, driver page*/
+#wrapper {
+    overflow-x: hidden;
+    background-color: #fff;
+  }
+  
+  #sidebar-wrapper {
+    position: sticky;
+      top: 0;
+      left: 0;
+      width: 100px;
+      height: 100vh;
+      padding: 0 1.7em;
+      overflow: hidden;
+      background-color: #095ff3;
+      transition: all 0.5s linear;
+  }
+  #sidebar-wrapper:hover{
+      width: 290px;
+      transition: 0.5s;
+  }
+  .main{
+    list-style: none;
+    padding: 20px;
+  }
+  .main a span{
+    overflow: hidden;
+  }
+  .main li{
+    padding: 5px;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+  }
+  .main li:hover, #active{
+    background-color: #001b48;
+  }
+  .main a{
+    text-decoration:none;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem ;
+  }
+  
+  
+  #sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 20px;
+  }
+  
+  #sidebar-wrapper .list-group {
+    width: 15rem;
+  }
+  
+  #page-content-wrapper {
+    min-width: 100vw;
+  }
+  
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+  }
+  
+  #menu-toggle {
+    cursor: pointer;
+  }
+  
+  .list-group-item {
+    border: none;
+    padding: 20px 30px;
+  }
+  
+  .list-group-item.active {
+    background-color: transparent;
+    color: var(--main-text-color);
+    font-weight: bold;
+    border: none;
+  }
+  
+  @media (min-width: 768px) {
+    #sidebar-wrapper {
+      margin-left: 0;
+    }
+  
+    #page-content-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+  
+    #wrapper.toggled #sidebar-wrapper {
+      margin-left: -15rem;
+    }
+  }
+  table tr td{
+    vertical-align: middle;
+  }
+  
+  td button{
+    margin: 5px;
+  }
+  
+  td button i{
+    font-size: 20px;
+  }
+  
+  
+  .modal-header{
+    background: #0d6efd;
+    color: #fff;
+  }
+  
+  .modal-body form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+  }
+  
+  .modal-body form .imgholder{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .imgholder .upload{
+    position: absolute;
+    bottom: 0;
+    left: 10;
+    width: 100%;
+    height: 100px;
+    background: rgba(0,0,0,0.3);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .upload i{
+    color: #fff;
+    font-size: 35px;
+  }
+  
+  .imgholder:hover .upload{
+    display: flex;
+  }
+  
+  .imgholder .upload input{
+    display: none;
+  }
+  
+  .modal-body form .inputField{
+    flex-basis: 68%;
+    border-left: 5px groove blue;
+    padding-left: 20px;
+  }
+  
+  form .inputField > div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  form .inputField > div label{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  #userForm form .inputField > div label::after{
+    content: "*";
+    color: red;
+  }
+  
+  form .inputField > div input{
+    width: 75%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid blue;
+  }
+  
+  .modal-footer .submit{
+    font-size: 18px;
+  }
+  
+  
+  #readData form .inputField > div input{
+    color: #000;
+    font-size: 18px;
+  }
+.side{
+    padding: 3em;
+}
+.side li{
+    list-style-type: none;
+}
+.side a{
+    text-decoration: none;
+    color: white;
+    line-height: 4em;
+}
+.side a:hover{
+    background-color: #001b48;
+}
+.sidebar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 100vh;
+    padding: 0 1.7em;
+    overflow: hidden;
+    background-color: #095ff3;
+    transition: all 0.5s linear;
+}
+.sidebar:hover{
+    width: 250px;
+    transition: 0.5s;
+}
+.logo a{
+    font-size: 12px;
+    text-decoration: none;
+    line-height: 0.5px;
+    position: absolute;
+    top: 1%;
+    color: white;
+
+
+}
+.logo h1{
+    font-size: 15px;
+    line-height: 1em;
+    position: absolute;
+    top: 5%;
+}
+
+.main{
+    list-style: none;
+    padding: 20px;
+}
+.main a span{
+    overflow: hidden;
+}
+.main li{
+    padding: 5px;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+.main li:hover, #active{
+    background-color: #001b48;
+}
+.main a{
+    text-decoration:none;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem ;
+}
+
+ 
+body{
+    background-image: url(img/car\ \(1\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh; 
+}
+
+ #dash{
+    display: flex;
+    height: 100vh;
+} 
+#home-page{
+    background-image: url(img/photo_1_2024-01-04_08-48-10.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+
+}
+
+.home{
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    background-color: #000;
+    opacity: 0.5;
+    
+}
+.nav{
+    margin-top: 14px;
+}
+.home .nav a{
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+}
+.nav a:hover{
+    border-bottom: 1px solid #fff;
+}
+.img-lo img{
+    width: 100px;
+    position: absolute;
+    left: 1%;
+    top: -0.5%;
+}
+.home-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+    font-weight: 100;
+}
+.home-btn button{
+    margin: 15px 10px;
+    padding:5px 5px ;
+    border: none;
+    border-radius: 5px;
+}
+.btn-home-1{
+    background-color: #095ff3;
+    color: white;
+    font-weight:bolder ;
+    cursor: pointer;
+}
+.btn-home-2{
+    background-color: #fff;
+    opacity: 0.5;
+    color: #000;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.hello_lay{
+    background-color: #000;
+}
+#body3{
+    background-image: url(img/photo_1_2024-01-04_08-48-10.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh; 
+
+}
+#btn1, #btn2{
+    text-decoration: none;
+    color: white;
+    border-radius: 15%;
+    padding: 1em;
+    margin: 0.5em;
+    background-color: #095ff3;
+    border: none;
+   
+}
+
+#login{
+    width: 100%;
+    border: none;
+    background-color: #001b48;
+    color:white;
+    text-align: center;
+    height: 35px;
+    border-radius: 1em;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+#p2 a{
+    text-decoration: none;
+    color: #095ff3;
+}
+.content{
+    padding: 3em;
+    background-image: url(img/car\ \(3\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+.content-img{
+    text-align: center;
+}
+
+.admin{
+    line-height: 3em;
+}
+
+header{
+    width: 20%;
+    height: 100px;
+    color: white;
+}
+header h1{
+    font-size: 20px;
+    line-height: 1em;
+    position: absolute;
+    top: 10%;
+    left: 7%;
+}
+header img{
+    width: 120px;
+    position: absolute;
+    top: 3%;
+}
+aside{
+    min-height: 600px;
+    width: 20%;
+    background-color: #095ff3;
+}
+.contents{
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+}
+.sub-1{
+    display: flex;
+    background-color: #001b48;
+    justify-content: space-between;
+    color: white;
+}
+.add button{
+    padding: 0.5em;
+    margin: 1em;
+    color: #fff;
+    background-color: #095ff3;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.route{
+    margin: 10px;
+    background-color: #001b48;
+    padding: 5px;
+    width: 160px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0,0 ,0 0, 6);
+}
+.form input{
+    border: none;
+    padding: 10px;
+}
+.user-account{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 5em;
+    box-shadow: 0 0 6 rgba(0,0 ,0 0, 6);
+    border-radius: 5px;
+}
+#create-acc{
+    height: 100%;
+    background-color: white;
+}
+.account{
+    width: 100%
+
+}
+.welcomes{
+    width: 70%;
+}
+.form-element .btn6{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    background-color: #001b48;
+}
+.form-element input[type="text"],
+.form-element input[type="number"]
+{
+    width: 100%;
+    display: block;
+    margin-top: 5px;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+
+}
+footer{
+    text-align: center;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%,-50%);
+}
+/* .logins_create{
+    line-height: 3em;
+    line-break:loose;
+} */
+.logins_create input{
+    width: 100%;
+
+}
+.create_account{
+    display: flex;
+    background-color: #fff;
+    width: 60%;
+    max-width: 1200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 2em;
+    box-shadow: 0px 0px 6px black;
+    border: 1px solid #001b48;
+    border: none;
+    gap: 5em;
+    border-radius: 10px;
+}
+.btn5{
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    margin: 15px;
+    background-color: #001b48;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.content-1{
+    background-image: url(img/car\ \(3\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color:white ;
+}
+.click{
+    text-decoration: none;
+    background-color: #001b48;
+    padding: 10px;
+    border-radius: 5px;
+    border:none ;
+    color: white;
+    transition: 0.5 all ease-in-out;
+}
+.content-1{
+    background-color: white;
+    width: 100%;
+}
+.lists{
+    background-color: #095ff3;
+    width: 100%;
+    color: white;
+}
+
+@media  screen and (max-width:400px){
+ 
+    .admin-page{
+        display: flex;
+        background-color: #fff;
+        width: 100%;
+    }
+    .home-content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+
+        font-weight: 100;
+        width: 50%;
+    }
+    .home{
+        display: flex;
+        justify-content: space-around;
+        color: #fff;
+        background-color: #000;
+        opacity: 0.5;
+        
+    }
+}
+
+table tr td{
+    vertical-align: middle;
+}
+td button{
+    margin: 5px;
+}
+td i{
+    font-size: 20px;
+}
+.modal-header{
+    background-color: #095ff3;
+    color: white;
+}
+form .card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+form .card label{
+    font-size: 20px;
+    font-weight: 500;
+}
+#userform form .card  label::after{
+    content: "*";
+    color: red;
+}
+form .card  input{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid blue;
+}
+
+.wrong{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 10px;
+    background-color: #fff;
+    height: 10vh;
+    padding: 4em;
+    border-radius: 10px;
+    display: none;
+}
